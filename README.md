@@ -2,14 +2,12 @@
 
 <div align="center">
 
-![Neural Network Playground Screenshot](./public/assets/screenshot.png)
-
-[![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-Neural%20Network-FF6F00?style=for-the-badge&logo=tensorflow)](https://www.tensorflow.org/js)
-[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![D3.js](https://img.shields.io/badge/D3.js-7.9.0-F9A03C?style=for-the-badge&logo=d3.js)](https://d3js.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.4-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![WebGL](https://img.shields.io/badge/WebGL-2.0-990000?style=for-the-badge&logo=webgl)](https://www.khronos.org/webgl/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-Neural%20Network-FF6F00.svg)](https://www.tensorflow.org/js)
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB.svg)](https://reactjs.org/)
+[![D3.js](https://img.shields.io/badge/D3.js-7.9.0-F9A03C.svg)](https://d3js.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.4-3178C6.svg)](https://www.typescriptlang.org/)
+[![WebGL](https://img.shields.io/badge/WebGL-2.0-green.svg)](https://www.khronos.org/webgl/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **An advanced, interactive neural network visualization and training platform built with TensorFlow.js, React, and WebGL**
 
@@ -22,7 +20,7 @@
 Neural Network Playground is a sophisticated, browser-based application that provides real-time visualization and experimentation with neural networks. Inspired by TensorFlow Playground but significantly enhanced, this tool renders the entire training process with WebGL acceleration, allowing users to gain deep intuitive understanding of neural network learning dynamics. The platform offers fine-grained control over network architectures, optimization algorithms, and hyperparameters with immediate visual feedback on performance metrics.
 
 <div align="center">
-  <img src="./public/assets/demo.gif" alt="Neural Network Playground Demo" width="80%"/>
+  <img src="./gif/main.gif" alt="Neural Network Playground Demo" width="80%"/>
 </div>
 
 ## Features
@@ -151,11 +149,6 @@ docker run -p 3000:3000 -e NODE_ENV=production neural-network-playground
    - Interactive loss landscape visualization
    - Precision-recall and ROC curves for classification tasks
 
-<div align="center">
-  <img src="./public/assets/user-workflow.png" alt="User Workflow" width="90%"/>
-  <p><i>Typical user workflow: from dataset selection to training and visualization</i></p>
-</div>
-
 ### Advanced Usage
 
 <details>
@@ -172,6 +165,7 @@ The playground implements a complete suite of activation functions that signific
 - **Linear**: No activation, suitable for regression problems
 
 The visualization system provides immediate feedback on how each activation function shapes the decision boundary and affects gradient flow.
+
 </details>
 
 <details>
@@ -187,6 +181,7 @@ Comprehensive regularization options to control overfitting:
 - **Early Stopping**: Automatically halts training when validation metrics plateau
 
 The interface provides visual indications of regularization effects, including neuron dropout animation and weight distribution histograms.
+
 </details>
 
 <details>
@@ -203,12 +198,17 @@ For advanced experimentation and educational demonstrations:
 4. Save and share custom datasets for collaboration
 
 This feature is particularly valuable for creating intuitive demonstrations of specific neural network behaviors and limitations.
+
 </details>
 
 ## Technical Implementation
 
 <div align="center">
-<img src="./public/assets/system-architecture.png" alt="System Architecture" width="90%"/>
+    <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="fig/arch-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="fig/arch-light.png">
+  <img alt="truthAlign System Architecture" src="fig/arch-dark.png" width="85%">
+</picture>
 <p><i>System architecture showing the interaction between key components</i></p>
 </div>
 
@@ -279,15 +279,6 @@ neural-network-playground/
     └── e2e/                  # End-to-end tests for user workflows
 ```
 
-## Performance Optimizations
-
-Neural Network Playground incorporates several advanced techniques to maintain high performance even with complex networks:
-
-<div align="center">
-  <img src="./public/assets/performance-comparison.png" alt="Performance Comparison" width="90%"/>
-  <p><i>Performance metrics comparing standard and optimized implementations</i></p>
-</div>
-
 ### Rendering Optimizations
 
 - **Instanced Rendering**: Uses WebGL instanced rendering for neurons and connections
@@ -312,7 +303,6 @@ Neural Network Playground incorporates several advanced techniques to maintain h
 ## Contributing
 
 Contributions are welcome! The project maintains high standards for code quality and performance. Whether you're interested in feature development, optimization, or documentation improvements.
-
 
 ## License
 
