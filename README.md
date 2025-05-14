@@ -320,3 +320,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
     <a href="https://demo-url-for-your-playground.com">Live Demo</a>
   </p>
 </div>
+<div align="center">
+Developed by Muhammad Ibrahim Kartal | [kartal.dev]
+
+</div>
